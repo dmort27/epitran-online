@@ -1,0 +1,17 @@
+body {
+  font-family: "DejaVu Sans", sans-serif;
+}
+
+textarea {
+  font-family: "DejaVu Sans", sans-serif;
+}
+
+#textout {
+  font-family: "Doulos SIL", "Charis SIL", "DejaVu Sans", sans-serif;
+}
+
+textarea, #textout {
+  font-size: 18pt;
+  width: 100%;
+  height: 100px;
+}

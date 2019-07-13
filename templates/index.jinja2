@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <header>
+    <title>Epitran Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </header>
+  <body>
+    Language:
+    <select id="language">
+        {% for code, name in langs%}
+          <option value="{{ code }}">{{ name }}</option>
+        {% endfor %}
+    </select>
+    <p>Input:</p>
+    <textarea id="textin" name="textin"></textarea>
+    <p>Output:</p>
+    <div id="textout"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='epitranonline.js') }}"></script>
+  </body>
+</html>
